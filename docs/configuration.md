@@ -2042,13 +2042,13 @@ The following is a simple example you can use for local development:
         filesystem:
             rootdirectory: /var/lib/registry
     http:
-        addr: localhost:5000
+        addr: :5000
         secret: asecretforlocaldevelopment
         debug:
-            addr: localhost:5001
+            addr: :5001
 
 The above configures the registry instance to run on port `5000`, binding to
-`localhost`, with the `debug` server enabled. Registry data storage is in the
+`0.0.0.0`, with the `debug` server enabled. Registry data storage is in the
 `/var/lib/registry` directory. Logging is in `debug` mode, which is the most
 verbose.
 
